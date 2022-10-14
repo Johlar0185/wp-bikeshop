@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat&display=swap");
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --red: #70271e;
+  --beige: #f8f9f4;
+  --grey: #f1f1f1;
+}
+
+body {
+  background-color: var(--beige);
+}
+
+img {
+  width: 50%;
+  align-self: center;
+}
+
+.bikeProducts {
+  border: 1px solid var(--black);
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 1em;
+  padding-bottom: 2em;
+}
+
+.price,
+.colour,
+.inStock {
+  padding-left: 1em;
+  font-family: montserrat;
+  font-style: italic;
+  margin: 0;
+  padding: 1em;
+  border-bottom: 1px solid var(--grey);
+  border-left: 1px solid var(--grey);
+  border-right: 1px solid var(--grey);
+}
+
+.price {
+  border-top: 1px solid var(--grey);
+}
+
+.brand {
+  font-family: montserrat;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.name {
+  font-family: Cinzel;
+  font-size: 2.5em;
+  border-bottom: 1px solid grey;
+  margin-top: 0;
+}
+
+.btnClass {
+  text-decoration: none;
+  font-family: montserrat;
+  align-self: center;
+  border: 1px solid var(--red);
+  padding: 0.5em;
+  color: var(--red);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.btnClass:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.price span,
+.inStock span {
+  font-weight: bold;
+}
+
+.colour {
+  display: flex;
+}
+
+.colour-list {
+  display: flex;
+}
+
+.colour-list span {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50px;
+  border: 1px solid var(--black);
+  margin: 0.1em;
+}
+
+@media only screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.logo {
+  max-width: 200px;
+}
+
+p {
+  font-family: montserrat;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  font-family: Cinzel;
+  list-style: none;
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--red);
+}
